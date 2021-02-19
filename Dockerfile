@@ -14,6 +14,6 @@ RUN pacman -Scc --noconfirm
 
 RUN mkdir /project
 
+COPY ./command.sh /command.sh
 WORKDIR /project
-COPY ./command.sh ./command.sh
-CMD ./command.sh
+CMD /command.sh
