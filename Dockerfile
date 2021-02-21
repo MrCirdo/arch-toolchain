@@ -10,4 +10,4 @@ RUN pacman -Syu --noconfirm clang automake autoconf gtest autoconf-archive boost
 
 RUN bsdtar -C / -xvf "$patched_glibc"
 
-RUN pacman -Scc --noconfirme
+RUN pacman -Scc --noconfirm
