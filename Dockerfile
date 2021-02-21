@@ -6,7 +6,7 @@ ARG patched_glibc=glibc-linux4-2.33-4-x86_64.pkg.tar.zst
 RUN curl -LO "https://repo.archlinuxcn.org/x86_64/$patched_glibc" && \
 bsdtar -C / -xvf "$patched_glibc"
 
-RUN pacman -Syu --noconfirm clang automake autoconf gtest autoconf-archive boost gcc make clang-format
+RUN pacman -Syu --noconfirm clang automake autoconf gtest autoconf-archive boost gcc make
 
 RUN bsdtar -C / -xvf "$patched_glibc"
 
